@@ -1,0 +1,20 @@
+.navbar {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    display: flex;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.navbar--list {
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    border: solid;
+}
+
+.navbar--list-link {
+    padding: 1rem;
+}
+
