@@ -7,10 +7,7 @@ addCartBtns.forEach((el) => {
     el.addEventListener("click", () => addToCart(el.parentElement))
 })
 
-const cartHover = document.querySelectorAll(".cart-hover");
-cartHover.forEach((el) => {
-    el.addEventListener("mouseenter", displayCartModal());
-})
+
 const updateCartTotal = () => {
     const cartTotalEl = document.querySelector(".cart-total");
     cartTotalEl.innerHTML = cart.length;
@@ -23,6 +20,13 @@ const addToCart = (element) => {
     console.log(cart.length);
 };
 
-const displayCartTotal = () => {
-    
+const displayCartModal = () => {
+    const cartModal = document.querySelector(".cart-modal");
+    cartModal.classList.remove("hidden");
+    console.log("unhiddeN")
 }
+
+const cartHover = document.querySelectorAll(".cart-hover");
+cartHover.forEach((el) => {
+    el.addEventListener("mouseenter", displayCartModal());
+})

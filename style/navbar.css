@@ -6,6 +6,9 @@
     grid-template-columns: repeat(3, 1fr);
     padding-left: 5%;
     padding-right: 5%;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .navbar--list {
@@ -47,13 +50,31 @@
     display: flex;
     justify-self: end;
     align-items: center;
+    position: relative;
 }
 
 .account {
     margin-right: 2rem;
 }
 
+.cart {
+    color: var(--color-dark);
+}
+.cart-total {
+    background-color: var(--color-sec);
+    color: var(--color-light);
+    font-size: .70em;
+    padding:  0.7px 5px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    cursor: pointer;
+}
 
+.cart:hover {
+    color: var(--color-dark);
+}
 
 /* Hero */
 

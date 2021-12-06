@@ -26,6 +26,9 @@ a {
     max-width: 60%;
 }
 
+.hidden {
+    display: none;
+}
 
 /* Hr */
 
