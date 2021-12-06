@@ -1,8 +1,9 @@
 .navbar {
     background-color: var(--color-light);
     color: var(--color-dark);
-    display: flex;
+    display: grid;
     align-items: center;
+    grid-template-columns: repeat(3, 1fr);
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -11,10 +12,68 @@
     list-style-type: none;
     display: flex;
     justify-content: start;
-    border: solid;
+    align-items: center;
 }
 
-.navbar--list-link {
-    padding: 1rem;
+.search-bar {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 10px;
+    border-radius: 50%;
+
 }
 
+.a-tag {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+
+.a-tag:hover {
+    color: var(--color-dark);
+    border-bottom: solid 1px;
+    transition: 0.5s;
+}
+
+.navbar--list-link:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.account-cart {
+    display: flex;
+    justify-self: end;
+    align-items: center;
+}
+
+.account {
+    margin-right: 2rem;
+}
+
+
+
+/* Hero */
+
+.hero {
+    background-image: url(../pic/tyler-lastovich-d0Sl3AH8Tlg-unsplash.jpg);
+    background-position: center;
+    height: 90vh;
+    color: var(--color-light);
+}
+
+.hero--container {
+    padding-top: 8rem;
+}
+
+
+
+/* Btn */
+
+
+.btn-wide {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}

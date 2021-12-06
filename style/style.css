@@ -1,0 +1,8 @@
+
+
+/* main featured products header */
+.featured-products {
+    display: inline;
+    border: solid;
+    transform: translateY(-1000px);
+}

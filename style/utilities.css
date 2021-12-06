@@ -5,5 +5,30 @@
 }
 
 body {
-    
+
+}
+
+button {
+    border: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+a {
+    cursor: pointer;
+}
+
+.max-width-sm {
+    max-width: 40%;
+}
+
+.max-width-md {
+    max-width: 60%;
+}
+
+
+/* Hr */
+
+.hr-md {
+    height: 3px;
 }
